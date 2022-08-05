@@ -1,0 +1,31 @@
+/****************************************************************
+ * CONFIGURATION MENU LCD STYLE
+ ****************************************************************/
+
+void LOG_MENU_LCD(void) {
+
+	ClearDevice_F(0xFFFF);
+
+	GLCD_FILLRECT(1, 1, 799, 15, BLACK);
+	GLCD_FILLRECT(780, 1, 799, 479, BLACK);
+	GLCD_FILLRECT(2, 16, 779, 70, GRAY1);
+	GLCD_FILLRECT(204, 398, 390, 479,BLUE);
+
+	drawString(320,35,BLACK,&arialRoundedMTBold_24ptFontInfo,"Log Menu");
+
+	GLCD_FILLRECT(1, 71, 790, 73, BLACK);
+	GLCD_FILLRECT(1, 395, 790, 397, BLACK);
+	GLCD_FILLRECT(201, 395, 203, 479, BLACK);
+	GLCD_FILLRECT(391, 395, 393, 479, BLACK);
+	GLCD_FILLRECT(587, 395, 589, 479, BLACK);
+
+	drawString(9, 427, BLACK, &arialRoundedMTBold_24ptFontInfo, "Monitor Menu");
+
+	drawString(231, 427, WHITE, &arialRoundedMTBold_24ptFontInfo, "Log Menu");
+
+	drawString(406, 427, BLACK, &arialRoundedMTBold_24ptFontInfo,
+			"Config Menu");
+
+	drawString(608, 427, BLACK, &arialRoundedMTBold_24ptFontInfo, "Test Menu");
+
+}
