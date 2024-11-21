@@ -4,9 +4,17 @@ LPC4088-OVERSPEED: Turbine Overspeed Protection System
 Overview
 --------
 
-The LPC4088-OVERSPEED project provides a microcontroller-based solution to safeguard turbines from overspeed conditions. Utilizing the NXP LPC4088 microcontroller, this system monitors turbine speed and initiates protective measures when necessary.
-
-![image](https://github.com/user-attachments/assets/ac8ee334-62c8-4adf-a148-c013a9c6bae5)
+The LPC4088-OVERSPEED project combines an FPGA and the NXP LPC4088 microcontroller to create a robust turbine overspeed protection system. The FPGA handles real-time sensor measurements and includes a Wishbone structure, allowing the microcontroller to access FPGA peripherals like ADCs, speed modules, and analog outputs. The LPC4088 manages system configuration, communication, and overall control, ensuring reliable and efficient turbine safety operations.
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ac8ee334-62c8-4adf-a148-c013a9c6bae5" alt="Image 1" height="300" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/41ed2497-850b-4c1a-b5d2-8552e88502c9" alt="Image 2" height="300" />
+    </td>
+  </tr>
+</table>
 
 Features
 --------
@@ -16,8 +24,6 @@ Features
 -   **User Interface**: Includes an LCD display and keypad for user interaction, enabling parameter adjustments and status monitoring.
 -   **Data Logging**: Records events and system statuses for analysis and maintenance purposes.
 -   **Communication Interfaces**: Supports UART and Modbus protocols for integration with external systems and remote monitoring.
--   
-![image](https://github.com/user-attachments/assets/41ed2497-850b-4c1a-b5d2-8552e88502c9)
 
 Repository Structure
 --------------------
@@ -75,7 +81,3 @@ License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgments
----------------
-
-Special thanks to the open-source community for providing valuable resources and support in the development of this project.
